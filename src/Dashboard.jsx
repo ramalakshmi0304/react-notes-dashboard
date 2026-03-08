@@ -21,7 +21,7 @@ const Dashboard = () => {
             <input type="text" placeholder='type a new note' value={notes} onChange={(e) = setNotes(e.target.value)}/>
                 <button onClick={handleSubmit}>add note</button>
         </div>
-
+    
 
     )
 }
