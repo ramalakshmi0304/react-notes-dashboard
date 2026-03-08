@@ -18,11 +18,13 @@ const Dashboard = () => {
     return (
         <div>
             <h2>dashboard</h2>
-            <input type="text" placeholder='type a new note' value={notes} onChange={(e) = setNotes(e.target.value)}/>
-                <button onClick={handleSubmit}>add note</button>
-        </div>
-    
+            <input type="text" placeholder='type a new note' value={notes} onChange={(e) = setNotes(e.target.value)} />
+            <button onClick={handleSubmit}>add note</button>
 
+            {notes.map((note) =>
+                <p> {notes}</p>
+            )}
+        </div>
     )
 }
 
